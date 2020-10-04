@@ -16,9 +16,9 @@ document.addEventListener('keydown', (event) => {
     if (event.ctrlKey) {
         // Even though event.key is not 'Control' (e.g., 'a' is pressed),
         // event.ctrlKey may be true if Ctrl key is pressed at the same time.
-        el.innerText = `Combination of ctrlKey + ${keyName}`;
+        el.innerText = `Combination of ctrlKey + ${keyCode}`;
     } else {
-        el.innerText = `Key pressed : ${keyName}`;
+        el.innerText = `Key pressed : ${keyCode}`;
     }
 
     console.log(`keydown ${keyName} ${keyCode}`)
@@ -33,7 +33,7 @@ document.addEventListener('keyup', (event) => {
   
     // As the user releases the Ctrl key, the key is no longer active,
     // so event.ctrlKey is false.
-    if (keyName === 'Control') {
+    if (keyCode === 'Control') {
         el.innerText = 'Control key was released';
     }
 
