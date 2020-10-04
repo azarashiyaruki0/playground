@@ -9,55 +9,18 @@
 .container{
     display: flex;
 }
-/*通常*/
-.panel{
-    flex:auto;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5%;
-    font-size: 3em;
-    /*ハイパーテキスト表示を消す*/
-    text-decoration: none;
-    text-align: center;
-    line-height: 100px;
+.container div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
     color: white;
-    background-color:deepskyblue;
-}
-/*ボタン上にマウスがある時*/
-.panel:hover{
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5%;
-    /*ハイパーテキスト表示を消す*/
-    text-decoration: none;
-    font-size: 3em;
-    text-align: center;
-    line-height: 100px;
-    color: white;
-    background-color:rgb(51, 147, 179);
-}
-/*ボタンを押したとき*/
-.panel:active{
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5%;
-    /*ハイパーテキスト表示を消す*/
-    text-decoration: none;
-    font-size: 3em;
-    text-align: center;
-    line-height: 100px;
-    color: white;
-    background-color:rgb(10, 73, 94);
+    background-color: black;
 }
 #voice {
     height: 100px;
     width: max-content;
-    font-size: 5em;
+    font-size: 3em;
     font-family: sans-serif;
-}   
+}
