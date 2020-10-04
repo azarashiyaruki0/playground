@@ -18,7 +18,7 @@ document.addEventListener('keydown', (event) => {
         // event.ctrlKey may be true if Ctrl key is pressed at the same time.
         el.innerText = `Combination of ctrlKey + ${keyName}`;
     } else {
-        el.innerText = `Key pressed ${keyName}`;
+        el.innerText = `Key pressed : ${keyName}`;
     }
 
     console.log(`keydown ${keyName} ${keyCode}`)
@@ -29,7 +29,6 @@ document.addEventListener('keyup', (event) => {
 
     const keyName = event.key;
     const keyCode = event.code;
-    var time = new date().getTime();
     var el = document.getElementById('voice');
   
     // As the user releases the Ctrl key, the key is no longer active,
